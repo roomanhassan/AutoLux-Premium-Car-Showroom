@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoLux | Premium Car Showroom</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <i class="fas fa-car"></i>
+        <span>Auto<strong>Lux</strong></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Cars</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Book a Test Drive</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HOME / HERO -->
+  <section class="hero" id="home">
+    <div class="hero-slider" id="heroSlider">
+
+      <div class="slide active">
+        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1600&q=80" alt="Luxury Sports Car" />
+          <!-- <img src="https://unsplash.com/photos/white-and-black-bmw-m-3-KQjBXXPRsYM" alt="Luxury Sports Car" /> -->
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="badge">New Arrival 2025</span>
+          <h1>Drive the <br /><span class="accent">Future</span> Today</h1>
+          <p>Discover our exclusive collection of premium and luxury vehicles crafted for those who demand the very best.</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn btn-primary">Explore Cars</a>
+            <a href="#contact" class="btn btn-outline">Book Test Drive</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span>500+</span><p>Cars Available</p></div>
+            <div class="stat"><span>50+</span><p>Luxury Brands</p></div>
+            <div class="stat"><span>15k+</span><p>Happy Clients</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80" alt="Porsche" />
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="badge">Featured Model</span>
+          <h1>Pure <br /><span class="accent">Performance</span></h1>
+          <p>Experience the thrill of German engineering with our handpicked sports car selection.</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn btn-primary">View Models</a>
+            <a href="#about" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span>0-60</span><p>in 3.2 Sec</p></div>
+            <div class="stat"><span>650</span><p>Horsepower</p></div>
+            <div class="stat"><span>Top</span><p>Rated 2025</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1600&q=80" alt="BMW" />
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="badge">Best Seller</span>
+          <h1>Elegance <br /><span class="accent">Redefined</span></h1>
+          <p>Our premium sedans combine luxury interiors with cutting-edge technology for the ultimate driving experience.</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span>#1</span><p>Luxury Brand</p></div>
+            <div class="stat"><span>5★</span><p>Rated Service</p></div>
+            <div class="stat"><span>24/7</span><p>Support</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider Controls -->
+    <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-btn next" id="nextBtn" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="img-main">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" alt="Showroom" />
+          </div>
+          <div class="img-secondary">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400&q=80" alt="Car Detail" />
+          </div>
+          <div class="about-badge-box">
+            <span class="num">25</span>
+            <span class="txt">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">About AutoLux</span>
+          <h2>Pakistan's Most Trusted <span class="accent">Premium Car</span> Showroom</h2>
+          <p>Since 1999, AutoLux has been the go-to destination for car enthusiasts and luxury vehicle buyers across Pakistan. We curate the world's finest automobiles under one roof, backed by transparent pricing and world-class after-sales service.</p>
+          <ul class="about-list">
+            <li><i class="fas fa-check-circle"></i> Certified Pre-Owned & Brand New Vehicles</li>
+            <li><i class="fas fa-check-circle"></i> Transparent, No-Haggle Pricing</li>
+            <li><i class="fas fa-check-circle"></i> 360° Vehicle Inspection Before Sale</li>
+            <li><i class="fas fa-check-circle"></i> Easy Financing Options Available</li>
+          </ul>
+          <a href="#products" class="btn btn-primary">View Our Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2>Our <span class="accent">Premium</span> Services</h2>
+        <p>Everything you need, from finding your dream car to keeping it in peak condition.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-car-side"></i></div>
+          <h3>New Car Sales</h3>
+          <p>Browse our extensive inventory of the latest models from the world's top manufacturers.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+          <h3>Trade-In & Exchange</h3>
+          <p>Get the best value for your current vehicle with our hassle-free trade-in program.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h3>Service & Maintenance</h3>
+          <p>Our certified technicians keep your car running at its absolute best, always.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h3>Easy Financing</h3>
+          <p>Flexible loan and leasing options tailored to your budget and lifestyle needs.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Insurance & Warranty</h3>
+          <p>Comprehensive coverage plans that protect your investment for years to come.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-road"></i></div>
+          <h3>Test Drive</h3>
+          <p>Book a test drive at your convenience and feel the thrill before you decide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS / CARS -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Fleet</span>
+        <h2>Featured <span class="accent">Vehicles</span></h2>
+        <p>Hand-selected cars that represent the pinnacle of style, comfort, and performance.</p>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Cars</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+        <button class="filter-btn" data-filter="suv">SUV</button>
+        <button class="filter-btn" data-filter="electric">Electric</button>
+      </div>
+      <div class="cars-grid" id="carsGrid">
+
+        <div class="car-card" data-category="sports">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&q=80" alt="Ferrari 488" loading="lazy" />
+            <span class="car-badge new">New</span>
+            <div class="car-overlay"><a href="#contact" class="btn btn-primary sm">Inquire Now</a></div>
+          </div>
+          <div class="car-info">
+            <div class="car-header">
+              <h3>Ferrari 488 GTB</h3>
+              <span class="car-price">$320,000</span>
+            </div>
+            <p>Italian masterpiece with 660 HP twin-turbo V8 engine.</p>
+            <div class="car-specs">
+              <span><i class="fas fa-tachometer-alt"></i> 330 km/h</span>
+              <span><i class="fas fa-bolt"></i> 3.0s 0-100</span>
+              <span><i class="fas fa-cog"></i> Auto</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card" data-category="luxury">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80" alt="BMW 7 Series" loading="lazy" />
+            <span class="car-badge featured">Featured</span>
+            <div class="car-overlay"><a href="#contact" class="btn btn-primary sm">Inquire Now</a></div>
+          </div>
+          <div class="car-info">
+            <div class="car-header">
+              <h3>BMW 7 Series</h3>
+              <span class="car-price">$110,000</span>
+            </div>
+            <p>The benchmark of luxury sedans with cutting-edge tech.</p>
+            <div class="car-specs">
+              <span><i class="fas fa-tachometer-alt"></i> 250 km/h</span>
+              <span><i class="fas fa-bolt"></i> 4.5s 0-100</span>
+              <span><i class="fas fa-cog"></i> Auto</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card" data-category="sports">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Porsche 911" loading="lazy" />
+            <span class="car-badge hot">Hot</span>
+            <div class="car-overlay"><a href="#contact" class="btn btn-primary sm">Inquire Now</a></div>
+          </div>
+          <div class="car-info">
+            <div class="car-header">
+              <h3>Porsche 911 GT3</h3>
+              <span class="car-price">$185,000</span>
+            </div>
+            <p>Legendary sports car with naturally aspirated 510 HP flat-six.</p>
+            <div class="car-specs">
+              <span><i class="fas fa-tachometer-alt"></i> 318 km/h</span>
+              <span><i class="fas fa-bolt"></i> 3.4s 0-100</span>
+              <span><i class="fas fa-cog"></i> PDK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card" data-category="suv">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&q=80" alt="Range Rover" loading="lazy" />
+            <span class="car-badge new">New</span>
+            <div class="car-overlay"><a href="#contact" class="btn btn-primary sm">Inquire Now</a></div>
+          </div>
+          <div class="car-info">
+            <div class="car-header">
+              <h3>Range Rover Vogue</h3>
+              <span class="car-price">$140,000</span>
+            </div>
+            <p>Unmatched luxury SUV with supreme off-road capability.</p>
+            <div class="car-specs">
+              <span><i class="fas fa-tachometer-alt"></i> 225 km/h</span>
+              <span><i class="fas fa-bolt"></i> 5.4s 0-100</span>
+              <span><i class="fas fa-cog"></i> Auto</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card" data-category="electric">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&q=80" alt="Tesla Model S" loading="lazy" />
+            <span class="car-badge electric">Electric</span>
+            <div class="car-overlay"><a href="#contact" class="btn btn-primary sm">Inquire Now</a></div>
+          </div>
+          <div class="car-info">
+            <div class="car-header">
+              <h3>Tesla Model S Plaid</h3>
+              <span class="car-price">$95,000</span>
+            </div>
+            <p>World's fastest production sedan with 1,020 HP tri-motor.</p>
+            <div class="car-specs">
+              <span><i class="fas fa-tachometer-alt"></i> 322 km/h</span>
+              <span><i class="fas fa-bolt"></i> 1.9s 0-100</span>
+              <span><i class="fas fa-leaf"></i> Electric</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-card" data-category="luxury">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=600&q=80" alt="Mercedes S-Class" loading="lazy" />
+            <span class="car-badge featured">Featured</span>
+            <div class="car-overlay"><a href="#contact" class="btn btn-primary sm">Inquire Now</a></div>
+          </div>
+          <div class="car-info">
+            <div class="car-header">
+              <h3>Mercedes S-Class</h3>
+              <span class="car-price">$120,000</span>
+            </div>
+            <p>The pinnacle of luxury motoring with an ultra-refined cabin.</p>
+            <div class="car-specs">
+              <span><i class="fas fa-tachometer-alt"></i> 250 km/h</span>
+              <span><i class="fas fa-bolt"></i> 4.3s 0-100</span>
+              <span><i class="fas fa-cog"></i> Auto</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Stories</span>
+        <h2>What Our <span class="accent">Clients</span> Say</h2>
+        <p>Real experiences from real car owners who trusted AutoLux.</p>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+
+        <div class="testi-card active">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"AutoLux made buying my dream Ferrari an unforgettable experience. The team was professional, transparent, and genuinely passionate about cars. I couldn't be happier!"</p>
+          <div class="testi-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed Khan" />
+            <div>
+              <strong>Ahmed Khan</strong>
+              <span>Ferrari 488 Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"I traded in my old car and got an exceptional deal on a Range Rover. The whole process took less than 2 days. Truly the best showroom in Pakistan!"</p>
+          <div class="testi-author">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sara Malik" />
+            <div>
+              <strong>Sara Malik</strong>
+              <span>Range Rover Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <p>"The financing options AutoLux offered were far better than any bank. Now I drive my Tesla Model S without any financial stress. Highly recommended!"</p>
+          <div class="testi-author">
+            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Bilal Raza" />
+            <div>
+              <strong>Bilal Raza</strong>
+              <span>Tesla Model S Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"World-class customer service and an incredible selection of cars. AutoLux is the only place I'll ever buy a car from. They treat you like family."</p>
+          <div class="testi-author">
+            <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Zara Ahmed" />
+            <div>
+              <strong>Zara Ahmed</strong>
+              <span>BMW 7 Series Owner</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiPrev"><i class="fas fa-arrow-left"></i></button>
+        <div class="testi-dots" id="testiDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="testi-btn" id="testiNext"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Visit Our <span class="accent">Showroom</span></h2>
+        <p>Ready to find your perfect car? Our experts are here to help you every step of the way.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Our Location</h4>
+              <p>MM Alam Road, Gulberg III,<br />Lahore, Pakistan</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+92 300 1234567<br />+92 42 35761234</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <p>info@autolux.pk<br />sales@autolux.pk</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon–Sat: 9 AM – 8 PM<br />Sunday: 11 AM – 5 PM</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+92 300 0000000" />
+            </div>
+            <div class="form-group">
+              <label for="interest">Interested In</label>
+              <select id="interest">
+                <option value="">Select a car type</option>
+                <option>Sports Car</option>
+                <option>Luxury Sedan</option>
+                <option>SUV</option>
+                <option>Electric Vehicle</option>
+                <option>Trade-In / Exchange</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your dream car..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Thank you! We'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo"><i class="fas fa-car"></i> Auto<strong>Lux</strong></a>
+          <p>Pakistan's most trusted premium car showroom since 1999. We help you drive the car of your dreams.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Our Cars</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Car Brands</h4>
+          <ul>
+            <li><a href="#">Ferrari</a></li>
+            <li><a href="#">Porsche</a></li>
+            <li><a href="#">BMW</a></li>
+            <li><a href="#">Mercedes-Benz</a></li>
+            <li><a href="#">Tesla</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe for the latest arrivals and exclusive offers.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AutoLux. All rights reserved.</p>
+        <p>Developed by Rooman <i class="fas fa-heart"></i> for car lovers</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
