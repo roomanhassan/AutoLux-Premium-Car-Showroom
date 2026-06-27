@@ -47,6 +47,7 @@ The website is optimized for:
 ![Uploading image.png…]()
 
 
+
 ## 🎯 Project Goals
 
 - Practice modern frontend development
